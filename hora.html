@@ -11,7 +11,7 @@
         var y = evento.pageY - pantalla.offsetTop; //pos y
         var d = new Date(); //crea una variable de tipo date
         var hora = checkTime(d.getHours()) + ":" + checkTime(d.getMinutes()) + ":" + checkTime(d.getSeconds());
-        //Verifica si el número de las horas, minutos o segundos, tiene un solo dígito, 
+        //Verifica si el número de las horas, minutos o segundos, tiene un solo dígito.
         //caso positivo le adiciona el cero en la frente para obtener el formato deseado 00:00:00
         function checkTime(i){
             if (i<10){
