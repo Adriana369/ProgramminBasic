@@ -1,0 +1,31 @@
+<html>
+    
+    <meta charset="UTF-8"/>
+
+</html>
+
+<script>
+
+    function saltarLinea(){
+        document.write("<br><br>");
+    }
+
+    function imprimir(mensaje){
+        document.write(mensaje);
+        saltarLinea();
+    }
+    //---------------
+    //Declaración de variables
+
+    var anhoMundial = 1930;
+    var limite = parseInt(prompt("Ingrese el año límite para calcular: "));
+
+    while (anhoMundial <= limite){
+        imprimir("Hubo mundial de la fifa en el año: " + anhoMundial);
+        anhoMundial += 4;
+    }
+    imprimir("fin");
+    
+
+    
+</script>

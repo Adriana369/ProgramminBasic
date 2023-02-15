@@ -1,0 +1,40 @@
+<html>
+    
+    <meta charset="UTF-8"/>
+    <h1>Tabla de Multiplicar.</h1>
+
+</html>
+
+<script>
+
+    function saltarLinea(){
+        document.write("<br><br>");
+    }
+
+    function imprimir(mensaje){
+        document.write(mensaje);
+        saltarLinea();
+    }
+    //---------------
+    //Declaración de variables
+    var numero = parseInt(prompt("Ingrese el número del que desea calcular la tabla de multiplicar: "))
+    var multiplicador = 1;
+    var resultado;
+
+    imprimir("TABLA DE MULTIPLICAR CON WHILE");
+    while(multiplicador <=10){
+        resultado = numero * multiplicador;
+        imprimir(numero + " x " + multiplicador + " = " + resultado)
+        multiplicador ++;
+    }
+
+    imprimir("TABLA DE MULTIPLICAR CON FOR");
+    for(var i = 1; i<=10; i++){
+        resultado = numero * i;
+        imprimir(numero + " x " + i + " = " + resultado)
+
+    }
+    
+
+    
+</script>

@@ -1,0 +1,45 @@
+<html>
+    <meta charset="UTF-8" />
+    
+    <h1>JUEGO DE ADIVINACIÓN</h1>
+
+</html>
+
+<script>
+
+    //---FUNCIONES---
+    function saltarLinea(){
+        document.write("<br><br>");
+    }
+
+    function imprimir(mensaje){
+        document.write(mensaje);
+    }
+
+    // Declaración de variables
+
+    var numeroPensado = Math.round(Math.random()*10);
+    var intentos= 3;
+    var contador = 1;
+    
+
+    while(contador <= 3){
+        var numeroLanzado = parseInt(prompt("Ingrese un número entre 0 - 10"));
+        if (numeroLanzado == numeroPensado){
+            alert("Usted acertó en el intento: "+ contador + "el número pensado es: " + numeroPensado);
+            break;
+        }
+        else{
+            alert("Usted erró");
+        }
+        contador++;
+    }
+    if (numeroLanzado == numeroPensado){
+        imprimir("Usted acertó en el intento: "+ contador + "el número pensado es: " + numeroPensado);
+    }
+    else{
+        imprimir("Usted erró, el número pensado es: "+ numeroPensado);
+    }
+   
+</script>
+
